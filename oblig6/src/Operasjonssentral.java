@@ -1,4 +1,3 @@
-package oblig6;
 
 /**
  * Klasse som oppretter <tt>Kanal</tt>-objektene og lar dem bli hentet ut..

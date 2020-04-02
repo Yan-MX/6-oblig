@@ -1,4 +1,3 @@
-package oblig6;
 
 public class Melding {
 	private int sekvensnummer;

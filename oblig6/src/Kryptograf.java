@@ -1,4 +1,3 @@
-package oblig6;
 
 public class Kryptograf implements Runnable {
 	Monitor m1, m2;

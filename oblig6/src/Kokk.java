@@ -1,4 +1,3 @@
-package oblig6;
 
  class Kokk implements Runnable {
       private FellesBord bord;

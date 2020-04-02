@@ -1,4 +1,3 @@
-package oblig6;
 
 import java.util.Random;
 

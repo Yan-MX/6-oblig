@@ -1,5 +1,3 @@
-package oblig6;
-
 
 /**
  * Klasse med metode for dekryptering av meldinger.

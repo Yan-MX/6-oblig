@@ -1,5 +1,3 @@
-package oblig6;
-
 
 class Tekster {
     static String[] dukkehjem = {

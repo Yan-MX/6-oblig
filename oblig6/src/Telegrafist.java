@@ -1,4 +1,3 @@
-package oblig6;
 
 public class Telegrafist implements Runnable {
 	Monitor m1;
