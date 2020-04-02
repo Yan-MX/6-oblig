@@ -1,4 +1,7 @@
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,18 +52,32 @@ public class Operasjonsleder implements Runnable {
 			}
 		}
 		sort();
+		print();
 		System.out.println("Operasjonalsleder " + " er ferdig");
-		System.out.println("check work: ");
-		for (int u = 0; u < info.get(0).size(); u++) {
-			System.out.println(info.get(0).get(u).getMelding());
+		
+		
+	}
+	public void print() {
+		int counter = 1;
+		for (ArrayList<Melding> j:info) {
+			String filename =Integer.toString(counter);
+			counter++;
+			try {
+				PrintWriter pw = new PrintWriter(filename+ ".txt","UTF-8");
+				for(Melding m: j) {
+					pw.println(m.getMelding());
+				}
+				System.out.println("file: "+filename+ ".txt is created, please check");
+				pw.close();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
-		for (int u = 0; u < info.get(1).size(); u++) {
-			System.out.println(info.get(1).get(u).getMelding());
-		}
-		for (int u = 0; u < info.get(2).size(); u++) {
-			System.out.println(info.get(2).get(u).getMelding());
-		}
-		System.out.println("wan");
 	}
 
 	public void sort() {

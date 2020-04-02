@@ -56,9 +56,9 @@ public class Monitor {
 			getOK++;
 //			System.out.println("getOK now is"+ getOK);
 			if(getOK == antallGet) {
-				System.out.println();
-			    System.out.println("Monitor"+this.Id+ " er helt ferdig!");;
-			    System.out.println();
+				
+			    System.out.println("[Monitor"+this.Id+ " er helt ferdig!]");;
+			   
 			}
 			
 			

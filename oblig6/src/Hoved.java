@@ -4,9 +4,15 @@ public class Hoved {
 
 	public static void main(String[] args) {
 		
-		int antallKanal = 3;
-		int antallKrytograf= 8;
+	//type in two numbers in terminal --works
+	int antallKanal = Integer.parseInt(args[0]);
+	int antallKrytograf= Integer.parseInt(args[1]);
+//		int antallKanal =4;
+//		int antallKrytograf= 20;
 		Operasjonssentral CIA = new Operasjonssentral(antallKanal);
+		if (antallKanal >3) {
+			antallKanal =3;
+		}
 		Kanal [] kanalArray = CIA.hentKanalArray();
 		Monitor m1 = new Monitor(antallKanal,antallKrytograf);
 		Monitor m2 = new Monitor(antallKrytograf,1);
